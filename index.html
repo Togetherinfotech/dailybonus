@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bonus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrolling text animation */
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: scroll 15s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Top Frame -->
+    <div class="bg-white shadow-lg rounded-lg mb-6 p-6">
+        <!-- Scrolling Text -->
+        <div class="bg-blue-600 text-white p-4 rounded-lg mb-6 relative">
+            <div class="scrolling-text absolute inset-0 flex items-center justify-start">
+                <span class="text-xl font-semibold pl-4">Complete the tasks for today to earn your bonus!</span>
+            </div>
+        </div>
+
+        <!-- Task Table -->
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200 text-gray-700">
+                    <th class="border border-gray-300 p-3 text-left">Theme</th>
+                    <th class="border border-gray-300 p-3 text-left">Content</th>
+                    <th class="border border-gray-300 p-3 text-left">Goal</th>
+                    <th class="border border-gray-300 p-3 text-left">Visit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 p-3">Theme 1</td>
+                    <td class="border border-gray-300 p-3">Content related to Theme 1</td>
+                    <td class="border border-gray-300 p-3">Goal 1</td>
+                    <td class="border border-gray-300 p-3">
+                        <a href="https://example.com/task1" class="text-blue-500 hover:underline">Visit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Theme 2</td>
+                    <td class="border border-gray-300 p-3">Content related to Theme 2</td>
+                    <td class="border border-gray-300 p-3">Goal 2</td>
+                    <td class="border border-gray-300 p-3">
+                        <a href="https://example.com/task2" class="text-blue-500 hover:underline">Visit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Theme 3</td>
+                    <td class="border border-gray-300 p-3">Content related to Theme 3</td>
+                    <td class="border border-gray-300 p-3">Goal 3</td>
+                    <td class="border border-gray-300 p-3">
+                        <a href="https://example.com/task3" class="text-blue-500 hover:underline">Visit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Theme 4</td>
+                    <td class="border border-gray-300 p-3">Content related to Theme 4</td>
+                    <td class="border border-gray-300 p-3">Goal 4</td>
+                    <td class="border border-gray-300 p-3">
+                        <a href="https://example.com/task4" class="text-blue-500 hover:underline">Visit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Theme 5</td>
+                    <td class="border border-gray-300 p-3">Content related to Theme 5</td>
+                    <td class="border border-gray-300 p-3">Goal 5</td>
+                    <td class="border border-gray-300 p-3">
+                        <a href="https://example.com/task5" class="text-blue-500 hover:underline">Visit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bottom Frame -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-bold text-blue-600 mb-4">Top 5 Performing Teams</h2>
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200 text-gray-700">
+                    <th class="border border-gray-300 p-3 text-left">Team Name</th>
+                    <th class="border border-gray-300 p-3 text-left">Performance</th>
+                    <th class="border border-gray-300 p-3 text-left">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 p-3">Team Alpha</td>
+                    <td class="border border-gray-300 p-3">Top Performer</td>
+                    <td class="border border-gray-300 p-3">95</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Team Bravo</td>
+                    <td class="border border-gray-300 p-3">Excellent</td>
+                    <td class="border border-gray-300 p-3">90</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Team Charlie</td>
+                    <td class="border border-gray-300 p-3">Great</td>
+                    <td class="border border-gray-300 p-3">85</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Team Delta</td>
+                    <td class="border border-gray-300 p-3">Good</td>
+                    <td class="border border-gray-300 p-3">80</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-3">Team Echo</td>
+                    <td class="border border-gray-300 p-3">Satisfactory</td>
+                    <td class="border border-gray-300 p-3">75</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
